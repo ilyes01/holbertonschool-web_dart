@@ -1,4 +1,4 @@
-void main() {
-  var n = 98 ; var $ = 'Battery street' ;
-print('n', '$\n');
-}
+void main () {
+ var $n = 98 ;  
+  print('$n', 'Battery street\n'); 
+  }
