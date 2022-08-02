@@ -1,8 +1,6 @@
-List<double> convertToF(List<double> temperaturesInC){
-List<double> res = [];
-for (int i = 0; i < temperaturesInC.length; i++){
-    res.add((temperaturesInC[i] * (9 / 5)) + 32).round().toDouble());
+List<double> convertToF(List<double> temperaturesInC) {
+  List<double> res = temperaturesInC.map((temperatureInC) {
+    return double.parse((res * 9 / 5 + 32).toStringAsFixed(2));
+  }).toList();
+  return res;
 }
-return res;
-}
-
