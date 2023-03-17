@@ -1,5 +1,5 @@
 class User {
-  String name;
+  String name = '';
   user();
   String showName() {
     return "Hello $name";
