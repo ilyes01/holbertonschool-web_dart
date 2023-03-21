@@ -1,16 +1,10 @@
 import 'dart:convert';
 
 Future<double> calculateTotal() async {
+var products = {"pizza": 20.30, "orange": 10, "water": 5, "soda": 8.5};
   try {
-    final userData = json.decode(await fetchUserData());
-    final userId = userData['id'];
-    final userOrders = json.decode(await fetchUserOrders(userId));
-    double total = 0;
-    for (var order in userOrders) {
-      final price = json.decode(await fetchProductPrice(order));
-      total += price;
-    }
-    return total;
+    return Future.delayed(
+        const Duration(seconds: 2), () => products[product]);
   } catch (err) {
     return -1;
   }
